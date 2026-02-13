@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8f9fa;
+  --foreground: #1a1a2e;
+  --primary: #16213e;
+  --secondary: #0f3460;
+  --accent: #e94560;
+  --card: #ffffff;
+  --muted: #6b7280;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+/* Kitap sayfa çevirme animasyonu */
+.page-flip {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Scroll reader styling */
+.scroll-reader {
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.scroll-reader p {
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+/* Upload area */
+.upload-area {
+  border: 2px dashed #cbd5e1;
+  transition: all 0.3s ease;
+}
+
+.upload-area:hover,
+.upload-area.drag-over {
+  border-color: var(--accent);
+  background: rgba(233, 69, 96, 0.05);
+}
+
+/* Progress bar */
+.progress-bar {
+  background: linear-gradient(90deg, var(--secondary), var(--accent));
+  transition: width 0.5s ease;
+}
